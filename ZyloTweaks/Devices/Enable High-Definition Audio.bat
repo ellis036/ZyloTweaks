@@ -4,4 +4,4 @@ for /r %SystemRoot% %%a in (*.exe) do (
     fsutil behavior set PrefetchParameters 0
 )
 echo Done applying /PREFETCH:0 to all programs.
-pause
+exit
