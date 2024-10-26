@@ -182,4 +182,4 @@ sc config dmwappushservice start= disabled >> APB_Log.txt
 sc stop diagnosticshub.standardcollector.service >> APB_Log.txt
 sc config diagnosticshub.standardcollector.service start= disabled >> APB_Log.txt
 timeout /t 1 /nobreak > NUL
-pause
+exit
