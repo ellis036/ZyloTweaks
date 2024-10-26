@@ -83,4 +83,4 @@ reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\ker
 echo BCDEdit settings applied and HPET disabled.
 echo Shortcut created in C:\ and scheduled task set with highest privileges.
 echo Registry settings for GlobalTimerResolutionRequests and SerializeTimerExpiration added.
-pause
+exit
