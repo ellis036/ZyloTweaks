@@ -27,3 +27,4 @@ echo Applying Ultra-Low Input Latency Settings...
 
     echo.
     echo Ultra-Low Input Latency settings applied.
+exit
