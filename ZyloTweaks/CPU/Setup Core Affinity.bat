@@ -48,4 +48,4 @@ if %errorlevel% equ 0 (
 )
 
 echo Both scripts have been created, and the scheduled tasks are set to run every minute with the highest privileges.
-pause
+exit
