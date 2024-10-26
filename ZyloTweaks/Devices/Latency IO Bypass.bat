@@ -325,4 +325,4 @@ taskkill /f /im explorer.exe
 start explorer.exe
 
 echo Optimizations applied. Press any key to exit.
-pause
+exit
