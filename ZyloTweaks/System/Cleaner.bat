@@ -60,4 +60,4 @@ echo Windows logs have been cleared.
 
 echo Cleanup complete.
 
-pause
+exit
