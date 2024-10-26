@@ -91,4 +91,4 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v "
 
 :: Notify the user that all low-latency tweaks have been applied
 echo All low-latency and timer-related registry tweaks applied successfully.
-pause
+exit
