@@ -10,5 +10,5 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v "
 
 :: Notify the user that max throughput settings have been applied
 echo Max throughput settings applied successfully.
-pause
+exit
 
