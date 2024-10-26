@@ -28,4 +28,4 @@ schtasks /create /tn "Set Global Affinity" /tr "C:\Scripts\SetGlobalAffinity.bat
 
 :: Confirm the task was created
 echo Scheduled task created to run every minute as SYSTEM. Check with 'schtasks /query /tn "Set Global Affinity"' to verify.
-pause
+exit
