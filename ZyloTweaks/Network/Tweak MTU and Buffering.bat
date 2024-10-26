@@ -16,4 +16,4 @@ netsh int tcp set global prr=enabled
 netsh int tcp set global pacingprofile=off
 
 echo All TCP settings have been configured for best performance.
-pause
+exit
