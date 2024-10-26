@@ -43,4 +43,4 @@ attrib +R "%configPath%\Engine.ini"
 explorer.exe "%configPath%"
 
 echo Operation completed successfully.
-pause
+exit
