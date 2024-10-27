@@ -48,4 +48,5 @@ if %errorlevel% equ 0 (
 )
 
 echo Both scripts have been created, and the scheduled tasks are set to run every minute with the highest privileges.
+POWERSHELL.EXE -Command "Add-Type -AssemblyName System.Windows.Forms; [void] [System.Windows.Forms.MessageBox]::Show( 'Tweaks Applied Successfully', 'Success', 'OK', 'Information' )"
 exit
