@@ -27,4 +27,5 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Direct3D" /v PresentationInterval
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Direct3D" /v FrameLatency /t REG_DWORD /d 2 /f
 
 echo "Smooth settings applied successfully."
+POWERSHELL.EXE -Command "Add-Type -AssemblyName System.Windows.Forms; [void] [System.Windows.Forms.MessageBox]::Show( 'Tweaks Applied Successfully', 'Success', 'OK', 'Information' )"
 exit
