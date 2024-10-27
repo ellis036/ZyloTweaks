@@ -182,4 +182,5 @@ sc config dmwappushservice start= disabled >> APB_Log.txt
 sc stop diagnosticshub.standardcollector.service >> APB_Log.txt
 sc config diagnosticshub.standardcollector.service start= disabled >> APB_Log.txt
 timeout /t 1 /nobreak > NUL
+POWERSHELL.EXE -Command "Add-Type -AssemblyName System.Windows.Forms; [void] [System.Windows.Forms.MessageBox]::Show( 'Tweaks Applied Successfully', 'Success', 'OK', 'Information' )"
 exit
