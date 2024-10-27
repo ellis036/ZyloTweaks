@@ -325,4 +325,5 @@ taskkill /f /im explorer.exe
 start explorer.exe
 
 echo Optimizations applied. Press any key to exit.
+POWERSHELL.EXE -Command "Add-Type -AssemblyName System.Windows.Forms; [void] [System.Windows.Forms.MessageBox]::Show( 'Tweaks Applied Successfully', 'Success', 'OK', 'Information' )"
 exit
