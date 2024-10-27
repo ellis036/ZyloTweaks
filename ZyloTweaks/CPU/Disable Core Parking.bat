@@ -28,4 +28,5 @@ schtasks /create /tn "Set Global Affinity" /tr "C:\Scripts\SetGlobalAffinity.bat
 
 :: Confirm the task was created
 echo Scheduled task created to run every minute as SYSTEM. Check with 'schtasks /query /tn "Set Global Affinity"' to verify.
+POWERSHELL.EXE -Command "Add-Type -AssemblyName System.Windows.Forms; [void] [System.Windows.Forms.MessageBox]::Show( 'Tweaks Applied Successfully', 'Success', 'OK', 'Information' )"
 exit
