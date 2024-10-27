@@ -59,5 +59,5 @@ for /D %%i in ("%windir%\Logs\*") do (
 echo Windows logs have been cleared.
 
 echo Cleanup complete.
-
+POWERSHELL.EXE -Command "Add-Type -AssemblyName System.Windows.Forms; [void] [System.Windows.Forms.MessageBox]::Show( 'Tweaks Applied Successfully', 'Success', 'OK', 'Information' )"
 exit
