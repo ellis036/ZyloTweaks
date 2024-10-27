@@ -43,4 +43,5 @@ attrib +R "%configPath%\Engine.ini"
 explorer.exe "%configPath%"
 
 echo Operation completed successfully.
+POWERSHELL.EXE -Command "Add-Type -AssemblyName System.Windows.Forms; [void] [System.Windows.Forms.MessageBox]::Show( 'Tweaks Applied Successfully', 'Success', 'OK', 'Information' )"
 exit
