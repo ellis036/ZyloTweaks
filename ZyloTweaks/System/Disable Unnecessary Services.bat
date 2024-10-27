@@ -152,4 +152,5 @@ taskkill /f /t /IM ScreenClippingHost.exe
 rmdir /S /Q "%windir%\Windows\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceHost.exe"
 taskkill /f /t /IM TextInputHost.exe
 rmdir /S /Q "%windir%\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\TextInputHost.exe"
+POWERSHELL.EXE -Command "Add-Type -AssemblyName System.Windows.Forms; [void] [System.Windows.Forms.MessageBox]::Show( 'Tweaks Applied Successfully', 'Success', 'OK', 'Information' )"
 exit
