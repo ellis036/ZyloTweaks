@@ -1,5 +1,4 @@
 @echo off
-REM Set the best TCP settings for performance
 
 netsh int tcp set global rss=enabled
 netsh int tcp set global autotuninglevel=experimental
@@ -15,6 +14,6 @@ netsh int tcp set global hystart=enabled
 netsh int tcp set global prr=enabled
 netsh int tcp set global pacingprofile=off
 
-echo All TCP settings have been configured for best performance.
+
 POWERSHELL.EXE -Command "Add-Type -AssemblyName System.Windows.Forms; [void] [System.Windows.Forms.MessageBox]::Show( 'Tweaks Applied Successfully', 'Success', 'OK', 'Information' )"
 exit
