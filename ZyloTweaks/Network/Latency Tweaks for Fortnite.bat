@@ -29,7 +29,7 @@ if exist "%configPath%\Engine.ini" (
 echo Downloading the new Engine.ini file...
 powershell -Command "(New-Object System.Net.WebClient).DownloadFile('%url%', '%configPath%\Engine.ini')"
 
-:: Check if the download was successful
+
 if errorlevel 1 (
     echo Failed to download the Engine.ini file. Exiting.
     exit /b
@@ -42,6 +42,5 @@ attrib +R "%configPath%\Engine.ini"
 :: Open the folder to view the backup and the new file
 explorer.exe "%configPath%"
 
-echo Operation completed successfully.
 POWERSHELL.EXE -Command "Add-Type -AssemblyName System.Windows.Forms; [void] [System.Windows.Forms.MessageBox]::Show( 'Tweaks Applied Successfully', 'Success', 'OK', 'Information' )"
 exit
