@@ -1,6 +1,4 @@
 @echo off
-:LowLatency
-echo Applying Low Latency settings...
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Direct3D" /v MaxBufferCount /t REG_DWORD /d 1 /f
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Direct3D" /v MaxFrameLatency /t REG_DWORD /d 1 /f
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Direct3D" /v FPUPreserve /t REG_DWORD /d 0 /f
