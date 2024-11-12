@@ -1,5 +1,4 @@
 @echo off
-
 echo Cleaning NVIDIA GLCache folder...
 set "nvidiaGLCache=%LOCALAPPDATA%\NVIDIA\GLCache"
 if exist "%nvidiaGLCache%" (
